@@ -1,4 +1,4 @@
-var raf = require('raf')
+let raf = require('raf')
 export default ({
   imgSrc,
   width = 425,
