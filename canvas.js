@@ -1,4 +1,4 @@
-let raf = require('raf')
+let raf = require('raf') // 相比较于定时器 效果更加平滑
 export default ({
   imgSrc,
   width = 425,
@@ -7,6 +7,7 @@ export default ({
   startTime = 1000,
   step = 2,
   changeSize = typeof changeSize === 'string' ? changeSize : Math.random() * 0.04
+  // 从传入的值类型判断是否是数值 如果有数值 则取值 如果为布尔值TRUE 则表示使用默认值
 }) => {
   //  如果没有传递src  则直接返回
   if (!imgSrc) return null
